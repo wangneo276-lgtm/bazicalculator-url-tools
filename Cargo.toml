@@ -1,0 +1,15 @@
+[package]
+name = "bazicalculator-url-tools"
+version = "0.1.0"
+edition = "2021"
+description = "Free BaZi calculator: Four Pillars, Day Master, Ten Gods, Five Elements and Luck Pillars with true solar time. Plus Zi Wei Dou Shu, Liu Yao, Mei Hua, Qi Men and the Chinese Almanac."
+license = "MIT"
+homepage = "https://bazicalculator.pro/"
+repository = "https://github.com/wangneo276-lgtm/bazicalculator-url-tools"
+readme = "README.md"
+keywords = ["bazi", "url", "metadata"]
+include = ["src/**", "README.md", "LICENSE", "Cargo.toml"]
+
+[lib]
+name = "bazicalculator_url_tools"
+path = "src/lib.rs"
