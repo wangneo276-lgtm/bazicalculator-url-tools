@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.clojars.tianwei</groupId>
+  <artifactId>bazicalculator-url-tools</artifactId>
+  <version>0.1.0</version>
+  <packaging>jar</packaging>
+  <name>bazicalculator-url-tools</name>
+  <description>Free BaZi calculator: Four Pillars, Day Master, Ten Gods, Five Elements and Luck Pillars with true solar time. Plus Zi Wei Dou Shu, Liu Yao, Mei Hua, Qi Men and the Chinese Almanac.</description>
+  <url>https://bazicalculator.pro/</url>
+  <licenses><license><name>MIT License</name><url>https://opensource.org/license/mit/</url></license></licenses>
+  <developers><developer><id>tianwei</id><name>wangneo276-lgtm</name></developer></developers>
+  <scm>
+    <url>https://github.com/wangneo276-lgtm/bazicalculator-url-tools</url>
+    <connection>scm:git:https://github.com/wangneo276-lgtm/bazicalculator-url-tools.git</connection>
+  </scm>
+  <distributionManagement>
+    <repository><id>clojars</id><url>https://clojars.org/repo</url></repository>
+  </distributionManagement>
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build><plugins>
+    <plugin><artifactId>maven-compiler-plugin</artifactId><version>3.13.0</version></plugin>
+    <plugin><groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>3.5.0</version>
+      <executions><execution><id>canonical-test</id><phase>test</phase><goals><goal>java</goal></goals>
+        <configuration><mainClass>pro.bazicalculator.urltools.Canonical</mainClass></configuration>
+      </execution></executions>
+    </plugin>
+  </plugins></build>
+</project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Bazicalculator.UrlTools</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>wangneo276-lgtm</Authors>
+    <Description>Free BaZi calculator: Four Pillars, Day Master, Ten Gods, Five Elements and Luck Pillars with true solar time. Plus Zi Wei Dou Shu, Liu Yao, Mei Hua, Qi Men and the Chinese Almanac.</Description>
+    <PackageProjectUrl>https://bazicalculator.pro/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wangneo276-lgtm/bazicalculator-url-tools</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="tests/**" />
+    <None Include="../README.md" Pack="true" PackagePath="" />
+    <None Include="../LICENSE" Pack="true" PackagePath="LICENSE" />
+  </ItemGroup>
+</Project>

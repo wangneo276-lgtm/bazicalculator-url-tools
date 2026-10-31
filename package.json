@@ -20,5 +20,8 @@
   "scripts": {
     "test": "node --test test.js"
   },
-  "author": "wangneo276-lgtm"
+  "author": "wangneo276-lgtm",
+  "bin": {
+    "bazicalculator-url-tools": "bin/bazi-url.mjs"
+  }
 }
