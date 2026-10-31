@@ -1,0 +1,8 @@
+local M = require("bazicalculator_url_tools")
+assert(M.home_url() == "https://bazicalculator.pro/")
+assert(M.page_url("about") == "https://bazicalculator.pro/about")
+assert(M.blog_url("bazi-compatibility-basics") == "https://bazicalculator.pro/blog/bazi-compatibility-basics")
+assert(M.locale_url("zh", "about") == "https://bazicalculator.pro/zh/about")
+local ok = pcall(M.canonical_url, "https://example.com/")
+assert(not ok)
+print("lua ok")
